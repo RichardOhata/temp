@@ -1,10 +1,9 @@
-/**
- * Router object will forward requests with url starting with "/api/..." by directing the request
- * depending on the part of the url after "/api/".
- */
+// Router object will forward requests depending on the part of the url after "/api" .
 
-const router = require("express").Router();
+const apiRouter = require("express").Router();
 
+const usersRouter = require("./users.js");
 
+apiRouter.use("/users", usersRouter);
 
-module.exports = router;
+module.exports = apiRouter;

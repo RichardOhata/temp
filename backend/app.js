@@ -12,10 +12,10 @@ connected
     });
 
 
-const router = require("./routes/index.js");
+const apiRouter = require("./routes/index.js");
 
 // express.json() is middleware that parses incoming requests with JSON payload
 app.use(express.json()); 
 
 // Responds to all api calls 
-app.use("/api", router);
+app.use("/api", apiRouter);
