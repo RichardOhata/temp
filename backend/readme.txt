@@ -1,0 +1,1 @@
+put "npm run dev" into console to run backend, should say that it is connected to database and that it is listening for requests
