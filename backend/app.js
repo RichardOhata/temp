@@ -17,5 +17,5 @@ const router = require("./routes/index.js");
 // express.json() is middleware that parses incoming requests with JSON payload
 app.use(express.json()); 
 
-// All api requests must have a url starting with "/api" .
+// Responds to all api calls 
 app.use("/api", router);
